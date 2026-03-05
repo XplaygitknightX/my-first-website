@@ -1,31 +1,136 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="bn">
 <head>
-<title>My First Website</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XplaygitknightX | Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<header>
-    <h1>My First Website</h1>
-</header>
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="logo">XplaygitknightX</div>
+    <nav class="links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn-outline" id="themeBtn">Glow</button>
+  </header>
 
-<section class="hero">
-  <p class="tag">Beginner Web Developer</p>
-  <h2>আমি ওয়েব ডেভেলপমেন্ট শিখছি</h2>
-  <p class="subtitle">HTML, CSS, JavaScript — ধীরে ধীরে, প্র্যাক্টিস করে।</p>
+  <!-- Hero -->
+  <main class="hero">
+    <p class="badge">Beginner Web Developer</p>
+    <h1 class="title">
+      AI-Powered <span class="grad">Developer Portfolio</span>
+    </h1>
+    <p class="subtitle">
+      আমি ওয়েব ডেভেলপমেন্ট শিখছি—HTML, CSS, JavaScript দিয়ে প্র্যাকটিস করছি।
+    </p>
 
-  <div class="buttons">
-    <a class="btn primary" href="#">My Projects</a>
-    <a class="btn" href="#">Contact</a>
-  </div>
-</section>
+    <div class="cta">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-outline" href="#contact">Contact</a>
+    </div>
+
 
 <footer>
     <p>Made by Mine </p>
 </footer>
 
+    <div class="stats">
+      <div class="card">
+        <p class="cardNum" id="stat1">0</p>
+        <p class="cardTxt">Projects</p>
+      </div>
+      <div class="card">
+        <p class="cardNum" id="stat2">0</p>
+        <p class="cardTxt">Days of Practice</p>
+      </div>
+      <div class="card">
+        <p class="cardNum" id="stat3">0</p>
+        <p class="cardTxt">GitHub Commits</p>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p>
+      আমি ১ম বর্ষ CSE স্টুডেন্ট। আমি ধীরে ধীরে Web Development শিখছি এবং
+      real projects বানাচ্ছি।
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <h2>Skills</h2>
+    <div class="chips">
+      <span class="chip">HTML</span>
+      <span class="chip">CSS</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Git</span>
+      <span class="chip">GitHub</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="grid">
+      <article class="proj">
+        <h3>Project #1 — My First Website</h3>
+        <p>ডার্ক UI + বেসিক লেআউট + GitHub Pages deploy</p>
+        <div class="projBtns">
+          <a class="btn btn-outline" href="#" target="_blank">Live</a>
+          <a class="btn btn-outline" href="#" target="_blank">Code</a>
+        </div>
+      </article>
+
+      <article class="proj">
+        <h3>Project #2 — Coming Soon</h3>
+        <p>Next: Responsive Landing Page + animations</p>
+        <div class="projBtns">
+          <a class="btn btn-outline" href="#" target="_blank">Live</a>
+          <a class="btn btn-outline" href="#" target="_blank">Code</a>
+        </div>
+      </article>
+
+      <article class="proj">
+        <h3>Project #3 — Coming Soon</h3>
+        <p>Next: JS mini app (To-Do / Calculator / Quiz)</p>
+        <div class="projBtns">
+          <a class="btn btn-outline" href="#" target="_blank">Live</a>
+          <a class="btn btn-outline" href="#" target="_blank">Code</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p class="muted">এখন স্ট্যাটিক সাইট, তাই আপাতত mailto ব্যবহার করবো। পরে ফর্মও যোগ করব।</p>
+
+    <div class="contactBox">
+      <a class="btn btn-primary" href="mailto:tanvirrahman0325704719cse.prog@gmail.com?subject=Portfolio%20Contact">
+        Email Me
+      </a>
+      <a class="btn btn-outline" href="https://github.com/XplaygitknightX" target="_blank">
+        GitHub
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> XplaygitknightX • Built with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
