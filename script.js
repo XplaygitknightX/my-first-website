@@ -57,4 +57,13 @@ let letter = "";
   } else {
     setTimeout(type, 80);
   }
-})();ss
+})();
+
+window.addEventListener("DOMContentLoaded", () => {
+  const introForge = document.getElementById("intro-forge");
+  if (!introForge) return;
+
+  setTimeout(() => {
+    introForge.classList.add("hide");
+  }, 2300);
+});
