@@ -26,6 +26,10 @@
     <h1 class="title">
       AI-Powered <span class="grad">Developer Portfolio</span>
     </h1>
+<p class="typing">
+  <span id="typed"></span><span class="cursor">|</span>
+</p>
+
     <p class="subtitle">
       আমি ওয়েব ডেভেলপমেন্ট শিখছি—HTML, CSS, JavaScript দিয়ে প্র্যাকটিস করছি।
     </p>
@@ -37,7 +41,7 @@
 
 
 <footer>
-    <p>Made by Mine </p>
+    <p>Made by XplaygitknightX</p>
 </footer>
 
     <div class="stats">
@@ -79,38 +83,54 @@
   </section>
 
   <!-- Projects -->
-  <section class="section" id="projects">
-    <h2>Projects</h2>
+  <section id="projects" class="section">
+  <h2>Projects</h2>
 
-    <div class="grid">
-      <article class="proj">
-        <h3>Project #1 — My First Website</h3>
-        <p>ডার্ক UI + বেসিক লেআউট + GitHub Pages deploy</p>
-        <div class="projBtns">
-          <a class="btn btn-outline" href="#" target="_blank">Live</a>
-          <a class="btn btn-outline" href="#" target="_blank">Code</a>
-        </div>
-      </article>
-
-      <article class="proj">
-        <h3>Project #2 — Coming Soon</h3>
-        <p>Next: Responsive Landing Page + animations</p>
-        <div class="projBtns">
-          <a class="btn btn-outline" href="#" target="_blank">Live</a>
-          <a class="btn btn-outline" href="#" target="_blank">Code</a>
-        </div>
-      </article>
-
-      <article class="proj">
-        <h3>Project #3 — Coming Soon</h3>
-        <p>Next: JS mini app (To-Do / Calculator / Quiz)</p>
-        <div class="projBtns">
-          <a class="btn btn-outline" href="#" target="_blank">Live</a>
-          <a class="btn btn-outline" href="#" target="_blank">Code</a>
-        </div>
-      </article>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>Project #1 — My First Website</h3>
+      <p>Dark UI + GitHub Pages Deploy</p>
+      <div class="project-btns">
+        <a class="btn" href="https://xplaygitknightx.github.io/my-first-website/" target="_blank">Live</a>
+        <a class="btn btn-outline" href="https://github.com/XplaygitknightX/my-first-website" target="_blank">Code</a>
+      </div>
     </div>
-  </section>
+
+    <div class="project-card">
+      <h3>Project #2 — Coming Soon</h3>
+      <p>Responsive Landing Page + Animations</p>
+      <div class="project-btns">
+        <a class="btn disabled">Live</a>
+        <a class="btn btn-outline disabled">Code</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Project #3 — Coming Soon</h3>
+      <p>JS Mini App (To-do / Calculator / Quiz)</p>
+      <div class="project-btns">
+        <a class="btn disabled">Live</a>
+        <a class="btn btn-outline disabled">Code</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="github-stats" class="section">
+  <h2>GitHub Stats</h2>
+
+  <div class="github-stats-grid">
+    <img
+      src="https://github-readme-stats.vercel.app/api?username=XplaygitknightX&show_icons=true&theme=tokyonight&hide_border=true"
+      alt="GitHub Stats"
+    />
+
+    <img
+      src="https://github-readme-stats.vercel.app/api/top-langs/?username=XplaygitknightX&layout=compact&theme=tokyonight&hide_border=true"
+      alt="Top Languages"
+    />
+  </div>
+</section>
 
   <!-- Contact -->
   <section class="section" id="contact">
@@ -132,5 +152,19 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <div id="particles-js"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 60 },
+    size: { value: 2 },
+    move: { speed: 1 },
+    line_linked: { enable: true, opacity: 0.2 }
+  }
+});
+</script>
 </body>
 </html>

@@ -29,3 +29,32 @@ themeBtn.addEventListener("click", () => {
   document.documentElement.style.setProperty("--glow", glowOn ? "0 0 30px rgba(255,60,60,.22)" : "0 0 0 rgba(0,0,0,0)");
   themeBtn.textContent = glowOn ? "Glow" : "No Glow";
 });
+
+const texts = [
+  "Beginner Web Developer",
+  "HTML • CSS • JavaScript",
+  "Building Projects Daily",
+  "Future Freelancer 🚀"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+  if(count === texts.length) count = 0;
+
+  currentText = texts[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typed").textContent = letter;
+
+  if(letter.length === currentText.length){
+    count++;
+    index = 0;
+    setTimeout(type, 1000);
+  } else {
+    setTimeout(type, 80);
+  }
+})();ss
